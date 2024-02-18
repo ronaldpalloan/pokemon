@@ -1,3 +1,61 @@
 * {
 	/*border: 1px solid red;*/
 }
+
+.card,
+.previous-next {
+	width: 600px;
+}
+
+.card {
+	box-shadow: 1px 1px 3px 0px black;
+}
+
+.pokemon-img:hover {
+	animation: rotating .5s;
+	cursor: pointer;
+}
+
+.prev {
+	width: 100px;
+	height: 70px;
+	border-radius: 5px 5px 50% 5px;
+	cursor: pointer;
+}
+
+.next {
+	width: 100px;
+	height: 70px;
+	border-radius: 5px 5px 5px 50%;
+	cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+	animation: bouncing .3s;
+}
+
+#pokemonName {
+	text-transform: capitalize; 
+}
+
+@keyframes bouncing {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(1px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes rotating {
+	0% {
+		/*transform: rotate(0);*/
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
