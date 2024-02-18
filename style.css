@@ -35,7 +35,9 @@
 	animation: bouncing .3s;
 }
 
-#pokemonName {
+#pokemonName,
+#pokemonType,
+#pokemonAbility {
 	text-transform: capitalize; 
 }
 
@@ -59,3 +61,4 @@
 		transform: rotate(360deg);
 	}
 }
+
